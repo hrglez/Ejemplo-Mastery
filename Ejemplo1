@@ -10,10 +10,10 @@ long fibonacci(long v){
 	if(v>=2){
 		for(i=0;i<=v-2;i++){
 			z=x+y;
-			x=y;
-			y=z;
+			x=y;fdfd
+			y=z;f
 		}
-	}
+	}fd
 	return z;
 }
 
