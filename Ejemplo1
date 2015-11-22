@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+long fibonacci(long v){
+	long x=0,y=1,z,i;
+	if(v==0){
+		z=x;
+	}
+	if(v==1) z=y;
+	if(v>=2){
+		for(i=0;i<=v-2;i++){
+			z=x+y;
+			x=y;
+			y=z;
+		}
+	}
+	return z;
+}
+
+int main(){
+long x,r;
+cout<<"Enter a number ";
+cin>>x;
+r=fibonacci(x);
+cout<<r<<endl;
+return 0;
+}
